@@ -1,0 +1,14 @@
+logical operator:
+
+ && and
+ || or
+ ! not
+
+comparation operator
+
+< 
+>
+<=
+>=
+==
+!=
