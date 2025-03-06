@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" placeholder="Enter your name" required> <br>
+        <input type="email" placeholder="Enter your Email" required> <br>
+        <input type="password" placeholder="Enter your Passwd" required> <br>
+        <input type="radio"> Male
+        <input type="radio">Female
+        <br>
+        <input type="checkbox">book
+        <input type="checkbox">pen
+        <input type="checkbox">note
+        <br>
+        <input type="date">
+        <input type="datetime-local">
+        <br>
+        <input type="color">
+        <br>
+        <input type="range" id="rangeInput" name="range" min="1" max="100" value="1">
+        <span id="rangeValue">1</span>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <select name="" id="">
+        <option value="">none</option>
+        <option value="">india</option>
+        <option value="">brazil</option>
+        <option value="">Russia</option>
+    </select>
+
+    <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+
+
+
+    <script>
+        const rangeInput = document.getElementById('rangeInput');
+        const rangeValue = document.getElementById('rangeValue');
+
+        rangeInput.addEventListener('input', function() {
+            rangeValue.textContent = rangeInput.value;
+        });
+    </script>
+
+
+</body>
+</html>
