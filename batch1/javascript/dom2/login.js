@@ -18,9 +18,11 @@ function login(event){
             // Redirect to the calculator page
             window.location.href = "calculator.html"; // Replace with your actual next page URL
         } else {
+             document.getElementById("error").innerHTML="Login failed incorrect password"
             alert("Login failed: Incorrect password");
         }
     } else {
+         document.getElementById("error").innerHTML="User Not Found"
         alert("User not found");
     }
 }
