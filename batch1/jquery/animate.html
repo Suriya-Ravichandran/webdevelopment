@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        .box1{
+            display: none;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <button id="changecolor"> change color</button> <button id="toggleclick">toggle</button>
+    <div class="box">
+
+    </div>
+    <br>
+
+    <div class="box1">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#changecolor").click(function(){
+                $(".box").animate({backgroundColor:'yellow'});
+            });
+
+            $("#toggleclick").click(function(){
+                $(".box1").animate({height:'toggle'});
+            });
+        });
+    </script>
+</body>
+</html>
