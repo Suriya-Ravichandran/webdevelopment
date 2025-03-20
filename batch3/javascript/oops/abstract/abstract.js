@@ -7,6 +7,7 @@ class data{
         this.name=name
         this.email=email
     }
+    
     getname(){
         return this.name
     }
