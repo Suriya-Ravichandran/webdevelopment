@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+
+}
+
+img{
+
+    height: 120px;
+    width: 90px;
+    
+}
+
+header .display{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;    
+}
+
+section header .menu{
+
+    background: #bb7c7c;
+}
+
+
+
+
+
+
