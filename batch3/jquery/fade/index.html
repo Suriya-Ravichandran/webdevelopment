@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin-top: 10px;
+        }
+
+    </style>
+    <button>click to fade in</button>
+    <div class="box">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box").animate({marginLeft: '250px'},function(){
+                    $(".box").animate({paddingBottom: '250px'});
+                });
+            });
+        });
+    </script>
+</body>
+</html>
