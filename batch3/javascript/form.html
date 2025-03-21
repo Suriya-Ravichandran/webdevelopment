@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg"></p>
+    <form action="#">
+        <input type="text" placeholder="User Name" id="user">
+        <input type="text" placeholder="Password" id="password">
+        <input type="submit" onclick="login()">
+    </form>
+
+    <script>
+        function login(){
+            event.preventDefault()
+            name=document.getElementById("user").value 
+            password=document.getElementById("password").value
+            verifyname="foo"
+            verifypassword="1234"
+            if(verifyname==name){
+                if(verifypassword==password){
+                    document.getElementById("msg").innerHTML="Login success"
+                    window.location.href= "./about.html"
+                }else{
+                    document.getElementById("msg").innerHTML="Invaild Password"
+                }
+            }else{
+                document.getElementById("msg").innerHTML="User not Found"
+            }
+        }
+    </script>
+</body>
+</html>
