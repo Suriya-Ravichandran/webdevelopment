@@ -1,5 +1,3 @@
-<!-- online boostrap -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,46 +9,130 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <section class="header bg-primary mt-2 rounded-5">
-        <nav class="navbar">
+    <section class="header bg-info">
+        <nav class="navbar navbar-expand-sm bg-light mt-2 rounded-5 fixed-top container-sm">
             <div class="container-fluid ms-3 me-3">
                 <div class="header-logo">
-                    <h3><a class="navbar-brand fs-3" href="#">
-                        <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
-                        iLanding
-                       </a>
-                    </h3>
-                 </div>
-                 <div class="header-btn">
+                    <h3><a class="navbar-brand fs-3" href="#">iLanding</a></h3>
+                </div>
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="header-btn d-flex">
+                    <button type="button" class="btn btn-primary btn-sm getstarted">Get Started</button>
                     <!-- Button trigger modal -->
-                        <div class="bar-icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-list"></i>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                 </div>
+                    <div class="bar-icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./img/illustration-1.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Maecenas Vitae Consectetur Led</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 rounded-5">Get Started</button>
+                  <button type="button" class="btn btn btn-lg px-4 border-dark"><i class="bi bi-play-circle"></i> Play Video</button>
+                </div>
+              </div>
+            </div>
+         </div>
+    </section>
+    <section class="Services-head bg-info">
+        <div class="container px-4 py-5" id="hanging-icons">
+            <div class="row g-2 py-5 row-cols-1 row-cols-lg-3 Services-head-row rounded-4 bg-light">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="bi bi-trophy ms-3 fs-1 text-primary"></i>
+                </div>
+                <div>
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+                </div>
+                <div>
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+                </div>
+                <div>
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item border-0">Home</li>
+                        <li class="list-group-item border-0">About</li>
+                        <li class="list-group-item border-0">Features</li>
+                        <li class="list-group-item border-0">Services</li>
+                        <li class="list-group-item border-0 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item border-0">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

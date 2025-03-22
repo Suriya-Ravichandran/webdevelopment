@@ -1,3 +1,53 @@
+.header .navbar{
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .header .header-btn .bar-icon{
    font-size: xx-large;
 }
+
+
+.bar-icon {
+   display: none;
+ }
+
+
+  /* Ensure the modal appears on top of the fixed navbar */
+  .modal-backdrop.show {
+   z-index: 1040 !important;
+}
+
+/* Increase z-index of the modal itself */
+.modal {
+   z-index: 1050 !important;
+}
+
+/* Styling to prevent dropdown from breaking */
+.dropdown-menu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1060 !important;
+}
+
+
+.Services-head-row{
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 
+ @media only screen and (max-width: 1200px) {
+   .navbar-nav{
+      display: none !important;
+   }
+   .bar-icon {
+     display: block;
+   }
+   .getstarted{
+      margin-top: 5px;
+      height: 40px;
+      width: 100px;
+   }
+ }
+
+ .active{
+   color: rgb(20, 119, 233) !important;
+ }
