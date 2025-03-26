@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  console.log("Auto Slideshow Running");
+
+  function autoSlide() {
+    $("#p1").css("color", "red")
+      .slideUp(2000) // Slide up the element
+      .slideDown(2000); // Slide down the element after 2 seconds
+  }
+
+  // Run autoSlide every 5 seconds (5000ms)
+  setInterval(autoSlide, 5000);
+});
+
+</script>
 </head>
 <body>
-    <button id="btn">click to Hide</button>
-    <p id="hide-msg"> Hello World</p>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#btn").click(function(){
-                $("#hide-msg").hide();
-            });
-        });
-    </script>
+<p id="p1">jQuery is fun!!</p>
+<img src="./download.jfif" alt="" id="panda">
 
 </body>
 </html>
