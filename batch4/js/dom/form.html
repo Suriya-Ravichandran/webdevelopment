@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Upper case input using onchange</h1>
+    <input type="text" placeholder="Enter any Text here" id="Text-box">
+
+    <script>
+        function upperCasetext(event){
+            event.preventDefault()
+            var text = document.getElementById("Text-box");
+            text.value = text.value.toUpperCase(); // Convert the text to uppercase
+        }
+        // Attach the event listener to the input element
+        document.getElementById('Text-box').addEventListener('input', upperCasetext);
+    </script>
+</body>
+</html>

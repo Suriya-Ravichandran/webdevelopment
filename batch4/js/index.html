@@ -6,9 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="msg"></p>
+
+    <script>
+        try{
+            alert("Welcome livewire")
+        }
+        catch(err){
+            document.getElementById("msg").innerHTML="speling mistake";
+        }
+        finally{
+            console.log("try catch is excuted")
+        }
+    </script>
 
 
-    <script src="hello.js"></script>
+
 </body>
 </html>
