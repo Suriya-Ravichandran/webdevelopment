@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="errormsg"></p>
+    <input type="text" placeholder="Enter your Email" id="email">
+    <input type="text" placeholder="Enter your password" id="password">
+    <input type="submit" onclick="submit()">
+
+
+    <script>
+
+            function submit(){
+                email=document.getElementById("email").value 
+                password=document.getElementById("password").value 
+                verifyemail="suriya@gmail.com"
+                verifypass="suriya@123"
+                function login(email,password){
+                    if(email==verifyemail){
+                        if(password==verifypass){
+                            return "Login success"
+                        }else{
+                            return "Incorrect password"
+                        }
+                    }else{
+                        return alert( "user not found")
+                    }
+                }
+                errormsg=login(email,password)
+                document.getElementById("errormsg").innerHTML=errormsg
+            }
+
+
+            
+    
+    </script>
+</body>
+</html>

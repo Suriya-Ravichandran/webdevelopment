@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="add-student-data">
+       <table border="1px solid black">
+        <tr>
+            <td> 
+                <h1>Add Student data</h1>
+                <input type="text" name="name" id="name" placeholder="Enter name">
+                <input type="text" id="age" name="age" placeholder="Enter age">
+                <input type="text" id="dept" name="dept" placeholder="Enter Department">
+                <input type="submit" onclick="addstudentData()">
+            </td>
+            <td> 
+                <h1>Update Student data</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Update name</h3>
+                            <input type="text" name="name" id="nameupdate" placeholder="Enter name">
+                            <input type="submit" onclick="updatename()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Update Age</h3>
+                            <input type="text" id="ageupdate" name="ageupdate" placeholder="Enter age">
+                            <input type="submit" onclick="updateage()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Update Dept</h3>
+                            <input type="text" id="deptupdate" name="deptupdate" placeholder="Enter dept">
+                            <input type="submit" onclick="updatedept()">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Student data</h1>
+                <p id="nameresult"></p>
+                <p id="ageresult"></p>
+                <p id="deptresult"></p>
+            </td>
+        </tr>
+       </table>
+    </div>
+    
+
+    <script>
+        let s1; // Declare s1 globally
+
+        class student {
+            constructor(name, age, dept) {
+                this.name = name;
+                this.age = age;
+                this.dept = dept;
+            }
+
+            setname(name) {
+                this.name = name;
+            }
+
+            setage(age) {
+                this.age = age;
+            }
+
+            setDept(dept) {
+                this.dept = dept;
+            }
+
+            getname() {
+                return this.name;
+            }
+
+            getage() {
+                return this.age;
+            }
+
+            getdept() {
+                return this.dept;
+            }
+        }
+
+        function addstudentData() {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let dept = document.getElementById("dept").value;
+            s1 = new student(name, age, dept);  // Create s1 object globally
+            document.getElementById("nameresult").innerHTML = "Name: " + s1.getname();
+            document.getElementById("ageresult").innerHTML = "Age: " + s1.getage();
+            document.getElementById("deptresult").innerHTML = "Dept: " + s1.getdept();
+        }
+
+        function updatename() {
+            let name = document.getElementById("nameupdate").value;
+            s1.setname(name); // Accessing the global s1 object
+            document.getElementById("nameresult").innerHTML = "Name: " + s1.getname(); // Update the displayed name
+        }
+
+        function updateage() {
+            let age = document.getElementById("ageupdate").value;
+            s1.setage(age); // Accessing the global s1 object
+            document.getElementById("ageresult").innerHTML = "Age: " + s1.getage(); // Update the displayed age
+        }
+
+        function updatedept() {
+            let dept = document.getElementById("deptupdate").value;
+            s1.setDept(dept); // Accessing the global s1 object
+            document.getElementById("deptresult").innerHTML = "Dept: " + s1.getdept(); // Update the displayed department
+        }
+    </script>
+</body>
+</html>
