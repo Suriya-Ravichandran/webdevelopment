@@ -1,5 +1,6 @@
-console.log("JS course in Livewire")
-
-let num=20
-let num2=30
-console.log("Result:",num+num2)
+const num=10
+console.log(num)
+num=20
+console.log(num)
+num=30
+console.log(num)
