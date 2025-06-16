@@ -1,19 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="text-info">Hello World</h1><br>
-    <button class="btn btn-danger ms-3 ps-5 pe-5">click Me</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA4CAMAAABuU5ChAAAA+VBMVEX////pQjU0qFNChfT6uwU0f/O4zvs6gfSJr/j6twDoOisjePPoNSXpPjDrWU/oLRr+9vZ7pff/vAAUoUAkpEn0ran619b82pT7wgD+68j947H/+e7//PafvPm/0vuBw5Df7+P63tz3xcPxl5HnJQ7qUEXxj4n4z83zoJzqSz/vgXrucWrsY1r1tbHrSBPoOjbvcSr0kx74rRH80XntZC3xhSPmGRr86+r4sk/936EJcfPS3/yowvnbwVKjsTjx9f5urEjkuBu9tC+ErkJyvoRRpj2az6hWs23j6/0emX2z2btAiuI8k8AyqkE5nZU1pGxCiOxVmtHJ5M+PSt3WAAACGElEQVRIieWSa3fSQBCGk20CJRcW2AWKxgJtqCmieNdatV5SUtFq5f//GJeE7CXJJOT4TZ+PO+c58+7MaNr/SWd60mecTDs1pMFp28dODPZnZw/369TXseXqHNfCblDdte84krTDwUFFwnMnJyXm+bSsmZ/vlcb1+6A2x5C1xYeyPgIyJlhtYDjzjOYyZA3oFighLYxni8UMY6dCG/jy9KzTQfI8DXSnTNN0kcl1lNE9dlxYC8TnnEVmAJ02qHlPllyb58vgmQ2Np0tYgzGMo2ex6IKRihi1mPhcZyYuO8McL4yYl0vrrI6mJZpx9Or1mzqa10rFt8p7o5ArXh+lXutC8d6ZBdiXvH6PeyPFsw8KMBu8fsG9+3t473l9yD1vD+/BX3v1cgqv3lzE/8A9NCUK5sn33vugeN1DQTcVTbG/9M56H+lEAzg2d54t7iW5657xCdEx5PF+B9Lj9oO9z4hBgIZX6YyaXfmZaV9QQkU781h+Hra+7jQaFv6Or8RW3r1rhErES641D9XKigox8jJaQxyAfZOpIQm6kiuT6BvfujqVuEpkkY43u+d1RBBF35v55aVJidKSEBRFiJAk/+0PM3NjgjFFMLc/WVYzlzImLBPprzvzrlBjHUmZSH8DmqatS0QSZtcjTxUBWSlZw1bckhaYlISTcm1rIqKolJJxtRWnXUVscTFsjWFFwoy7WTM2+zX69/gDaLcy7SET9nsAAAAASUVORK5CYII=" alt="">
+    <style>
+        body{
+            font-family: 'Merriweather', serif;
+            background-color: #f8f9fa;
+        }
+      .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark pt-3 sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2" href="#">Arul Murugan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">API Development</a></li>
+                  <li><a class="dropdown-item" href="#">IOT Projects</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
-</body>
+    <div class="bg-dark text-secondary px-4 py-5 text-center"> 
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Arul Murugan</h1>
+            <div class="col-lg-6 mx-auto"> 
+                <p class="fs-5 mb-4">I am Web Developer,c++ Developer</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                     <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Download Cv</button>
+                     <button type="button" class="btn btn-outline-light btn-lg px-4">Hire me</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="about">
+        <div class="row featurette"> 
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">About us </h2>
+                <p class="lead">Hello! I'm Arul Murugan, a passionate and dedicated MERN Stack Developer with a strong foundation in building dynamic, high-performance web applications. My expertise spans across MongoDB, Express.js, React.js, and Node.js, enabling me to develop full-stack solutions that are scalable, efficient, and user-friendly.</p> 
+                <p class="lead">I enjoy turning complex problems into simple, elegant, and intuitive digital experiences. Whether it's crafting RESTful APIs, managing databases, or developing interactive front-end interfaces, I take pride in writing clean, maintainable code.</p>
+                <p class="lead">I’m constantly exploring new technologies and frameworks, and I thrive on solving real-world problems through code. When I’m not coding, I enjoy learning about emerging tech, contributing to open-source projects, and sharpening my skills with coding challenges.</p>
+            </div> 
+            <div class="col-md-5 order-md-1">
+                    <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+                    <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                </svg> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="container-fluid my-5 bg-dark text-white p-5" id="service">
+        <h1 class="text-center">My Service</h1>
+        <div class="row mt-2">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Website Development</h5>
+                    <p class="card-text">I am Offered a website development for best price</p>
+                    <a href="#" class="btn btn-primary">Contact me</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container skills" id="skills">
+        <h1 class="text-center my-5">My Skills</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">I have a strong understanding of HTML, the backbone of web development, allowing me to create structured and semantic web pages.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">I am proficient in CSS, enabling me to style web pages with precision and create visually appealing designs.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">I have a solid grasp of JavaScript, allowing me to add interactivity and dynamic features to web applications.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container py-5">
+    
+    <div class="mb-4">
+        <div class="d-flex justify-content-between">
+        <h5>HTML</h5>
+        <span>25%</span>
+        </div>
+        <div class="progress">
+        <div class="progress-bar bg-success" style="width: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <div class="d-flex justify-content-between">
+        <h5>CSS</h5>
+        <span>50%</span>
+        </div>
+        <div class="progress">
+        <div class="progress-bar bg-info" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <div class="d-flex justify-content-between">
+        <h5>JavaScript</h5>
+        <span>75%</span>
+        </div>
+        <div class="progress">
+        <div class="progress-bar bg-warning text-dark" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <div class="d-flex justify-content-between">
+        <h5>React</h5>
+        <span>100%</span>
+        </div>
+        <div class="progress">
+        <div class="progress-bar bg-danger" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    </div>
+
+    <section class="album py-5 bg-body-tertiary"id="blog">
+    <div class="container">
+        <h2 class="text-center mb-5">My Blogs</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        
+        <!-- Card Start -->
+        <div class="col">
+            <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
+                focusable="false">
+                <title>Project Thumbnail</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+                <p class="card-text">This is a project card with a brief description of the work or technologies used.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins ago</small>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Card End -->
+
+        <!-- Duplicate the block above for each additional card -->
+        <!-- Just copy and paste the <div class="col">...</div> part -->
+
+        <!-- Example: Add two more cards -->
+        <div class="col">
+            <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
+                focusable="false">
+                <title>Project Thumbnail</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+                <p class="card-text">Another project description with unique features or challenges faced.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">12 mins ago</small>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
+                focusable="false">
+                <title>Project Thumbnail</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+                <p class="card-text">Project showcasing API integration and backend logic.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">30 mins ago</small>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Repeat more as needed -->
+
+        </div>
+    </div>
+    </section>
+
+   <div class="container-fluid bg-dark text-white p-5">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    
+    <!-- Brand & Copyright -->
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <p class="text-white">© 2025 Arul Murugan</p>
+    </div>
+
+    <!-- Spacer Column -->
+    <div class="col mb-3"></div>
+
+    <!-- Footer Section 1 -->
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Section 2 -->
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Section 3 -->
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+      </ul>
+    </div>
+
+  </footer>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
