@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello Dhiliph,</p>
+    <p class="welcome">Welcome to Livewire</p>
+    <p id="message"></p>
+
+    <script>
+        alert("This is DOM Example page")
+        const messagecontent=document.getElementsByTagName("p")
+        const messagecontent2=document.getElementsByClassName("welcome")
+        // console.log(messagecontent[0])
+        document.getElementById("message").innerHTML= "Message:"+messagecontent[0].innerHTML+" "+messagecontent2[0].innerHTML
+        document.querySelector(".welcome").style.color="red"
+    </script>
+</body>
+</html>
