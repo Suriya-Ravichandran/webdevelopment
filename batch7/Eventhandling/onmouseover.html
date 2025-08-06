@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+    <div class="box" id="box" onmouseover="colorchange()" onmouseout="colorout()">
+
+    </div>
+
+    <script>
+        function colorchange(){
+            document.getElementById("box").style.background="red"
+            document.getElementById("box").style.height="100px"
+        }
+        function colorout(){
+            document.getElementById("box").style.background="blue"
+            document.getElementById("box").style.height="200px"
+        }
+    </script>
+</body>
+</html>
