@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formid">
+        <input type="text" name="name" id="name" placeholder="name">
+        <input type="submit" id="btn">
+        <p id="msg"></p>
+    </form>
+
+    <script>
+
+        document.getElementById("formid").addEventListener("submit",(event)=>{
+            event.preventDefault()
+            name=document.getElementById("name").value
+            document.getElementById("msg").innerHTML= "Hello,"+ name
+        })
+
+    </script>
+</body>
+</html>
