@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Progress Bar</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            }
+
+            .progress-container {
+            width: 100%;
+            max-width: 400px;
+            height: 30px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            }
+
+            .progress-bar {
+            width: 100%;
+            height: 100%;
+            }
+
+            .progress-fill {
+            height: 100%;
+            width: 0%;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: width 0.3s ease;
+            }
+
+    </style>
+
+  <div class="progress-container">
+    <div class="progress-bar">
+      <div class="progress-fill">0%</div>
+    </div>
+  </div>
+
+  <button id="start">Start Loading</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('#start').click(function () {
+            let width = 0;
+            let interval = setInterval(function () {
+            if (width >= 100) {
+                clearInterval(interval);
+            } else {
+                width++;
+                $('.progress-fill').css('width', width + '%');
+                $('.progress-fill').text(width + '%');
+            }
+            }, 50); // Adjust speed here
+        });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquerylib/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+
+    <button>Click</button>
+
+    <div class="box">
+
+    </div>
+
+
+    <script>
+        $(document).ready(()=>{
+            $("button").click(()=>{
+                $(".box").animate({left:'500px'});
+            })
+        })
+    </script>
+</body>
+</html>
