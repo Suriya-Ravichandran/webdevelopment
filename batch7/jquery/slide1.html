@@ -7,25 +7,14 @@
     <script src="jquerylib/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <style>
-        .box{
-            height: 100px;
-            width: 100px;
-            background-color: blue;
-            position: absolute;
-        }
-    </style>
+    <button>Click me</button>
+    <h1 style="display: none;">Hello world</h1>
 
-    <button>Click</button>
 
-    <div class="box">
-
-    </div>
-    
     <script>
         $(document).ready(()=>{
             $("button").click(()=>{
-                $(".box").animate({bottom:'500px'});
+                $("h1").slideToggle(1000)
             })
         })
     </script>

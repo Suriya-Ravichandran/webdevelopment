@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: flex-start;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap-reverse;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+    </style>
+
+    <div class="parent">
+        <!-- child 1 -->
+        <div class="child">
+            <p>1</p>
+        </div>
+
+        <!-- child 2 -->
+        <div class="child">
+             <p>2</p>
+        </div>
+
+        <!-- child 3 -->
+        <div class="child">
+             <p>3</p>
+        </div>
+
+        <!-- child 4 -->
+        <div class="child">
+             <p>4</p>
+        </div>
+    </div>
+</body>
+</html>

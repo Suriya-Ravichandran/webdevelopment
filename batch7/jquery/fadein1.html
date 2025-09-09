@@ -9,25 +9,24 @@
 <body>
     <style>
         .box{
-            height: 100px;
-            width: 100px;
-            background-color: blue;
-            position: absolute;
+            height: 400px;
+            width: 400px;
+            background-color: blueviolet;
+            /* display: none; */
         }
     </style>
-
-    <button>Click</button>
-
+    <button>Click me</button>
     <div class="box">
 
     </div>
-    
+
+
     <script>
         $(document).ready(()=>{
             $("button").click(()=>{
-                $(".box").animate({bottom:'500px'});
-            })
-        })
+                $(".box").fadeToggle(4000);
+            });
+        });
     </script>
 </body>
 </html>
