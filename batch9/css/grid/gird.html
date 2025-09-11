@@ -8,10 +8,8 @@
 <body>
     <style>
         .parent{
-            display: flex;
-            justify-content: space-evenly;
-            /* flex-direction: row-reverse; */
-            flex-wrap: wrap-reverse;
+            display: grid;
+            grid-template-columns: auto auto auto;
         }
         .child{
             height: 100px;
@@ -22,24 +20,14 @@
     </style>
 
     <div class="parent">
-        <!-- child 1 -->
-        <div class="child">
-            <p>1</p>
-        </div>
+        <div class="child" >
 
-        <!-- child 2 -->
-        <div class="child">
-             <p>2</p>
         </div>
-
-        <!-- child 3 -->
         <div class="child">
-             <p>3</p>
+
         </div>
-
-        <!-- child 4 -->
         <div class="child">
-             <p>4</p>
+
         </div>
     </div>
 </body>
